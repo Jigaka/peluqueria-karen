@@ -1,0 +1,172 @@
+:root{
+    --first-color: #8a3c37;
+    --first-alpha-color: rgba(217,0,98,0.75);
+    --second-color: #4e3a39;
+    --second-alpha-color: rgba(20,25,45,0.75);
+    --third-color: #754845;
+    --third-alpha-color: rgba(80,20,100,0.75);
+    --white-color: #fff;
+    --gray-light-color: #dddddd;
+    --gray-color: #ccc;
+    --gray-dark-color: #666666;
+    --black-color: #000;
+    --link-color: #0A57A3;
+    --link-ligth-color: #FFFFFF;
+    --title-color: #333;
+    --text-color: #222;
+    --white-alpha-color: rgba(255,255,255,0.5);
+    --black-alpha-color: rgba(0,0,0,0.5);
+    --font: 'DM Serif Display', serif;;
+    --max-width: 1200px;
+    --header-height: 4rem;
+    --width-slides: 200%;
+    --number-of-corousel: 2;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+h1{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--gray-light-color);
+    margin: 0;
+    padding: 1rem;
+    height: 100svh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem;
+    background-color: var(--third-color);
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+
+.btn::after{
+    content: "➡";
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.busqueda{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid white;
+    background-color: var(--gray-light-color);
+    margin-top: 25px;
+}
+
+.descuentos {
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--first-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descuentos > img {
+    height: 100px;
+    width: auto;
+}
+
+
+.descuento-text > p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+header {
+    /* padding: 0.5rem; */
+    padding: 0.3rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*white-space: nowrap;  Evita que los elementos se dividan en varias líneas */
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+    display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    flex-direction: row;
+}
+
+.horizontal-list li {
+    padding: 10px;
+    min-width: 200px;
+    height: 250px;
+    margin: 0 10px; /* Añade margen entre elementos para separarlos */
+    border: 1px solid #ccc; /* Opcional: estilo de borde */
+    background-color: #f0f0f0; /* Opcional: color de fondo */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.img-service{
+    height: 120px;
+    width: auto;
+}
+
+.precio{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicios h2{
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.text-black{
+    color: black;
+}
