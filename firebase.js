@@ -4,7 +4,6 @@ import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase
 
 
 let app;
-const env = process.env;
 (()=> {
     // Implementar estas claves aqui no es lo optimo,
     // Para estos propositos es suficiente
