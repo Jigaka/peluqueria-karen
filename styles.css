@@ -52,13 +52,16 @@ body {
 .btn {
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 1rem .5rem;
     background-color: var(--third-color);
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    border: none;
+    outline: none;
 }
 
 .btn::after{
@@ -96,4 +99,8 @@ header h1{
     font-weight: bold;
     color: rgba(255, 255, 255, 0.774);
     line-height: 1.5;
+}
+
+.google-icon{
+    margin-right: 0.4rem;
 }
